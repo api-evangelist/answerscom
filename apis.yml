@@ -1,8 +1,24 @@
 aid: answerscom
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/answerscom.png
 name: Answers.com
-description: Answers.com is a company surfaced as a portfolio company of redpoint-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Answers.com is a consumer question-and-answer and reference website where visitors ask
+  questions and get instant answers across trivia, science, history, and everyday topics, increasingly
+  blended with AI-personality chat, flashcard makers, study guides, and a math solver. It operates as a
+  content and reference destination rather than a developer platform, and the enrichment pipeline found
+  no public developer API, OpenAPI specification, SDKs, or /.well-known/ discovery surface. This profile
+  is retained as a company record in the API Evangelist network; the only machine-verifiable artifact is
+  a live domain-security probe of the answers.com host.
 url: https://raw.githubusercontent.com/api-evangelist/answerscom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Question and Answer
+- Reference
+- Knowledge
+- Content
+- Consumer
+- Education
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/answerscom-domain-security.yml
 - type: Website
-  url: http://www.answers.com/
+  url: https://www.answers.com/
+- type: Support
+  url: https://www.answers.com/pages/contact-us
+- type: HelpCenter
+  url: https://www.answers.com/pages/faq
+- type: TermsOfService
+  url: https://www.infospace.com/terms/terms-of-use.html
+- type: PrivacyPolicy
+  url: https://system1.com/terms/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

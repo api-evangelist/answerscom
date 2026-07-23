@@ -1,0 +1,17 @@
+generated: '2026-07-17'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.answers.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Apr  5 19:50:17 2027 GMT
+  hsts: true
+  hsts_max_age: 300
+domains:
+- domain: answers.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
